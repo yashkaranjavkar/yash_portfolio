@@ -1,24 +1,30 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Work from "@/components/Work";
+import Project from "@/components/Project";
+import ProfessionalExperience from "@/components/ProfessionalExperience";
 import FreelanceGallery from "@/components/FreelanceGallery";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <div>
-      <div className="min-h-screen bg-cream px-6 md:px-12 lg:px-24 py-10 font-mono bg-[#f5f0e7] text-[#0a5029]">
+      <div className="bg-white px-6 md:px-64">
         {/* Header */}
-        <div className="flex justify-between items-center font-medium z-10 border-b-4 border-r-8 border-l-2 pb-5 pr-2 pl-2">
-          <h1 className="font-serif text-2xl">YASH</h1>
+        <div
+          style={{ fontFamily: '"MS Reference Sans Serif", sans-serif' }}
+          className="bg-white sticky top-0 z-50 py-10"
+        >
           <Header />
         </div>
 
-        {/* Hero Section */}
+        {/* Hero Section: Center */}
         <Hero />
 
-        {/* Work Section */}
-        <Work />
+        {/* Project Section */}
+        <Project />
+
+        {/* Professional Experience */}
+        <ProfessionalExperience />
 
         {/* FreelanceGallery */}
         <FreelanceGallery />
@@ -26,6 +32,9 @@ export default function Home() {
         {/* Footer */}
         <Footer />
       </div>
+      {/* <p style={{ fontFamily: "Karla, sans-serif" }}>This text uses Karla.</p>
+      <h1 style={{ fontFamily: "Esteban, serif" }}>This text uses Esteban.</h1>
+      <div>This text uses MS Reference Sans Serif.</div> */}
     </div>
   );
 }

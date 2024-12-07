@@ -34,7 +34,7 @@ export default function FreelanceGallery() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
           {projects.map((project, index) => (
             <div key={index} className="group relative">
-              <div className="overflow-hidden rounded-lg shadow-lg">
+              <div className="overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
