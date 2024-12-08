@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div
       style={{ fontFamily: "Esteban, serif" }}
-      className="text-[48px] font-normal text-left mt-8 py-10"
+      className="text-[48px] font-normal text-left mt-8 py-8"
     >
       <h2 className="">
         hey there , i am{" "}

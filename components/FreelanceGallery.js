@@ -20,18 +20,18 @@ export default function FreelanceGallery() {
   ];
 
   return (
-    <div className="mt-28">
+    <div style={{ fontFamily: "Esteban, serif" }} className="mt-8 py-5">
       {/* Main Section */}
       <div className="px-6 sm:px-12 lg:px-24 py-16">
         <div className="text-center">
           <h2 className="text-4xl font-extrabold">freelance design gallery</h2>
-          <p className="text-lg text-gray-500 mt-4">
+          {/* <p className="text-lg text-gray-500 mt-4">
             brief project overviews & insights
-          </p>
+          </p> */}
         </div>
 
         {/* Gallery Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {projects.map((project, index) => (
             <div key={index} className="group relative">
               <div className="overflow-hidden">
@@ -39,7 +39,7 @@ export default function FreelanceGallery() {
                   src={project.image}
                   alt={project.title}
                   width={500}
-                  height={400}
+                  height={500}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
@@ -48,6 +48,12 @@ export default function FreelanceGallery() {
             </div>
           ))}
         </div>
+      </div>
+      <div
+        style={{ fontFamily: "Karla, sans-serif" }}
+        className="mt-3 font-medium text-xl text-center underline"
+      >
+        see more
       </div>
     </div>
   );

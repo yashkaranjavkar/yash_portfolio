@@ -42,7 +42,7 @@ export default function Project() {
             width: isHovering ? 80 : 16,
             height: isHovering ? 32 : 16,
           }}
-          className="flex items-center justify-center rounded-[20px] bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40"
+          className="flex items-center justify-center rounded-[20px] bg-neutral-300 backdrop-blur-md dark:bg-gray-300/40"
         >
           <AnimatePresence>
             {isHovering ? (
@@ -52,7 +52,7 @@ export default function Project() {
                 exit={{ opacity: 0, scale: 0.6 }}
                 className="inline-flex w-full items-center justify-center"
               >
-                <div className="inline-flex items-center text-sm text-white dark:text-black">
+                <div className="inline-flex items-center text-sm text-[#671CAD] dark:text-black">
                   More <MoveUpRight className="ml-1 h-4 w-4" />
                 </div>
               </motion.div>
@@ -72,7 +72,7 @@ export default function Project() {
               onClick={() => window.open(project.link, "_blank")}
               className="grid grid-cols-2 items-center gap-x-4 py-6"
             >
-              <h4 className="font-bold indent-3 text-purple-700 text-2xl">
+              <h4 className="font-bold indent-3 text-[#671CAD] text-2xl">
                 {project.title}
               </h4>
               <div className="text-gray-700 text-sm space-y-1">

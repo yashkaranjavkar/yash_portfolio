@@ -1,41 +1,63 @@
-import { Linkedin } from "lucide-react";
 import Link from "next/link";
-
+import { email, linkedIn, behance, instagram } from "@/lib/staticContent";
 
 export default function Footer() {
   return (
-    <footer className="py-8">
-      {/* Top Section */}
-      <div className="flex flex-col sm:flex-row justify-between items-center border-b border-gray-700 pb-8">
-        <div className="text-xl font-bold">YASH</div>
-        <div className="mt-4 sm:mt-0 text-center">
-          <span className="text-gray-400">Lets work together.</span>
+    <div className="py-8">
+      <div
+        style={{ fontFamily: "Esteban, serif" }}
+        className="flex flex-col items-end mb-6"
+      >
+        <h2 className="text-4xl font-medium">what’s on your mind?</h2>
+        <p className="text-4xl font-medium text-start">share with me</p>
+        <Link
+          style={{ fontFamily: "Karla, sans-serif" }}
+          href={`mailto:${email}`}
+          className="text-purple-600 text-xl mt-2 inline-block"
+        >
+          {">>> " + email}
+        </Link>
+      </div>
+      <div className="border-t border-black py-6 flex justify-between items-center">
+        <Link href={"/"} className="text-3xl text-purple-600">yk.</Link>
+        <span
+          style={{ fontFamily: "Karla, sans-serif" }}
+          className="text-base text-black"
+        >
+          yash karanjavkar © 2024
+        </span>
+      </div>
+      <div className="flex justify-between items-center mt-2 text-sm text-black">
+        <div style={{ fontFamily: "Karla, sans-serif" }}>
           <Link
-            href="/contact"
-            className="text-red-400 hover:text-red-500 ml-2 font-semibold"
+            href={linkedIn}
+            className="mr-4 underline"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Reach out
+            linkedin
+          </Link>
+          <Link
+            href={behance}
+            className="underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            behance
           </Link>
         </div>
-      </div>
-
-      {/* Bottom Section */}
-      <div className="flex flex-col sm:flex-row justify-between items-center mt-8">
-        <nav className="flex gap-6 text-lg">
-          <Link href="/work" className="hover:underline">
-            work
-          </Link>
-          <Link href="/about" className="hover:underline">
-            about
-          </Link>
-          <Link href="/resume" className="hover:underline">
-            resume
-          </Link>
-        </nav>
-        <div className="mt-4 sm:mt-0">
-          <Linkedin />
+        <div>
+          share me memes on &gt;
+          <a
+            href={instagram}
+            className="ml-1 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            instagram
+          </a>
         </div>
       </div>
-    </footer>
+    </div>
   );
 }
