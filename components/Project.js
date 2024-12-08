@@ -42,7 +42,7 @@ export default function Project() {
             width: isHovering ? 80 : 16,
             height: isHovering ? 32 : 16,
           }}
-          className="flex items-center justify-center rounded-[20px] bg-neutral-300 backdrop-blur-md dark:bg-gray-300/40"
+          className="flex items-center justify-center rounded-[20px] bg-[#e4e4e4] dark:bg-gray-300/40"
         >
           <AnimatePresence>
             {isHovering ? (
@@ -52,7 +52,7 @@ export default function Project() {
                 exit={{ opacity: 0, scale: 0.6 }}
                 className="inline-flex w-full items-center justify-center"
               >
-                <div className="inline-flex items-center text-sm text-[#671CAD] dark:text-black">
+                <div className="inline-flex items-center text-sm text-[#434343]">
                   More <MoveUpRight className="ml-1 h-4 w-4" />
                 </div>
               </motion.div>
@@ -64,7 +64,7 @@ export default function Project() {
         <h3 className="font-semibold text-xl">projects</h3>
         <h3 className="font-semibold text-xl">details</h3>
       </div>
-      <Separator className="my-2 bg-black" />
+      <Separator className="my-2 bg-black h-[1px]" />
       <div ref={targetRef} className="mt-4">
         {Projects.map((project) => (
           <div key={project.key}>
@@ -72,14 +72,14 @@ export default function Project() {
               onClick={() => window.open(project.link, "_blank")}
               className="grid grid-cols-2 items-center gap-x-4 py-6"
             >
-              <h4 className="font-bold indent-3 text-[#671CAD] text-2xl">
+              <h4 className="font-bold text-[#671CAD] text-3xl">
                 {project.title}
               </h4>
-              <div className="text-gray-700 text-sm space-y-1">
+              <div className="text-[16px] space-y-1">
                 {project.details}
               </div>
             </div>
-            <Separator className="my-1 bg-neutral-700" />
+            <Separator className="my-1 bg-black h-[1px]" />
           </div>
         ))}
       </div>

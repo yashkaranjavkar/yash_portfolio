@@ -1,40 +1,49 @@
+"use client";
+import Link from "next/link";
 import Image from "next/image";
+import { email } from "@/lib/staticContent";
 
 export default function FreelanceGallery() {
   const projects = [
     {
-      title: "Project 1",
-      image: "/nina-luong-IOwItPmnkyU-unsplash.jpg", // Replace with actual image paths
-      description: "Short description for project 1",
+      title: "Mandeshi Agro",
+      image: "/freelance1.png",
+      description: "Social Media Posters",
+      link: "https://www.behance.net/gallery/150123194/Mandeshi-Agro",
     },
     {
-      title: "Project 2",
-      image: "/robby-mccullough-_rLDh9IFHf8-unsplash.jpg", // Replace with actual image paths
-      description: "Short description for project 2",
+      title: "Monic Elctricals",
+      image: "/freelance2.png",
+      description: "Out-reach collaterals",
+      link: "https://www.behance.net/gallery/163098497/Monic-Electricals",
     },
     {
-      title: "Project 3",
-      image: "/mitchell-ng-liang-an-s34iTpkwnF0-unsplash.jpg", // Replace with actual image paths
-      description: "Short description for project 3",
+      title: "Volleyball World",
+      image: "/freelance3.png",
+      description: "ATL collaterals",
+      link: "https://www.behance.net/gallery/171881065/Volleyball-World-marketing-assets",
     },
   ];
 
   return (
-    <div style={{ fontFamily: "Esteban, serif" }} className="mt-8 py-5">
+    <div
+      style={{ fontFamily: "Esteban, serif" }}
+      className=" font-normal mt-8 py-5"
+    >
       {/* Main Section */}
       <div className="px-6 sm:px-12 lg:px-24 py-16">
         <div className="text-center">
-          <h2 className="text-4xl font-extrabold">freelance design gallery</h2>
-          {/* <p className="text-lg text-gray-500 mt-4">
-            brief project overviews & insights
-          </p> */}
+          <h2 className="text-4xl">freelance design gallery</h2>
         </div>
 
         {/* Gallery Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {projects.map((project, index) => (
             <div key={index} className="group relative">
-              <div className="overflow-hidden">
+              <div
+                onClick={() => window.open(project.link, "_blank")}
+                className="overflow-hidden"
+              >
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -54,6 +63,20 @@ export default function FreelanceGallery() {
         className="mt-3 font-medium text-xl text-center underline"
       >
         see more
+      </div>
+      <div
+        style={{ fontFamily: "Esteban, serif" }}
+        className="flex flex-col items-end text-end mb-6"
+      >
+        <h2 className="text-4xl font-medium">what’s on your mind?</h2>
+        <p className="text-4xl font-medium">share with me</p>
+        <Link
+          style={{ fontFamily: "Karla, sans-serif" }}
+          href={`mailto:${email}`}
+          className="text-purple-600 text-xl mt-2 inline-block"
+        >
+          {">>> " + email}
+        </Link>
       </div>
     </div>
   );

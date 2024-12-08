@@ -11,11 +11,10 @@ export default function About() {
           <span>what up! 🤜</span>
           <span>kya bolte! 🤟</span>
         </TextLoop>
-        what up! kya bolte!
       </h1>
 
       <div className="flex items-start gap-6">
-        <div className="font-thin text-lg" style={{ flex: 2 }}>
+        <div className="font-thin text-lg text-[#434343]" style={{ flex: 2 }}>
           <div className="mt-5">
             Student of Masters in Interaction Design at IDC School of Design,
             IIT Bombay. It has been a roller coaster ride to shift my discipline

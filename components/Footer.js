@@ -4,20 +4,6 @@ import { email, linkedIn, behance, instagram } from "@/lib/staticContent";
 export default function Footer() {
   return (
     <div className="py-8">
-      <div
-        style={{ fontFamily: "Esteban, serif" }}
-        className="flex flex-col items-end mb-6"
-      >
-        <h2 className="text-4xl font-medium">what’s on your mind?</h2>
-        <p className="text-4xl font-medium text-start">share with me</p>
-        <Link
-          style={{ fontFamily: "Karla, sans-serif" }}
-          href={`mailto:${email}`}
-          className="text-purple-600 text-xl mt-2 inline-block"
-        >
-          {">>> " + email}
-        </Link>
-      </div>
       <div className="border-t border-black py-6 flex justify-between items-center">
         <Link href={"/"} className="text-3xl text-purple-600">yk.</Link>
         <span
@@ -27,7 +13,7 @@ export default function Footer() {
           yash karanjavkar © 2024
         </span>
       </div>
-      <div className="flex justify-between items-center mt-2 text-sm text-black">
+      <div className="flex justify-between items-center mt-12 text-base text-black">
         <div style={{ fontFamily: "Karla, sans-serif" }}>
           <Link
             href={linkedIn}
@@ -50,7 +36,7 @@ export default function Footer() {
           share me memes on &gt;
           <a
             href={instagram}
-            className="ml-1 hover:underline"
+            className="ml-1 underline"
             target="_blank"
             rel="noopener noreferrer"
           >
