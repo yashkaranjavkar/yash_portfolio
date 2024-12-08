@@ -1,12 +1,5 @@
-import Link from "next/link";
-
 const Footer = () => {
-  return (
-    <footer className="py-10 border-t border-gray-300">
-      
-
-    </footer>
-  );
+  return <footer className="py-10 border-t border-gray-300"></footer>;
 };
 
 export default Footer;
