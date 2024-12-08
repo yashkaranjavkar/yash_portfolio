@@ -27,9 +27,6 @@ export default function Home() {
 
         {/* FreelanceGallery */}
         <FreelanceGallery />
-
-        {/* Footer */}
-        <Footer />
       </div>
       {/* <p style={{ fontFamily: "Karla, sans-serif" }}>This text uses Karla.</p>
       <h1 style={{ fontFamily: "Esteban, serif" }}>This text uses Esteban.</h1>

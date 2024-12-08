@@ -1,5 +1,6 @@
 import { Esteban, Karla } from "next/font/google";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const esteban = Esteban({ subsets: ["latin"], weight: "400" });
 const karla = Karla({ subsets: ["latin"], weight: ["400", "700"] });
@@ -26,6 +27,8 @@ export default function RootLayout({ children }) {
           <Header />
         </div>
         {children}
+        {/* Footer */}
+        <Footer />
       </body>
     </html>
   );
