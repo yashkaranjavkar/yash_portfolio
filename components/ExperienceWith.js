@@ -1,9 +1,12 @@
+import { Esteban } from "next/font/google";
 import Image from "next/image";
 import { companies } from "@/lib/staticContent";
 
+const esteban = Esteban({ subsets: ["latin"], weight: "400" });
+
 const ExperienceWith = () => {
   return (
-    <div style={{ fontFamily: "Esteban, serif" }} className="mt-10 py-5">
+    <div className={`${esteban.className} mt-8 py-8`}>
       <h2 className="text-6xl font-medium text-center my-5">
         experience in working with
       </h2>

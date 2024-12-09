@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { email, linkedIn, behance, instagram } from "@/lib/staticContent";
+import { linkedIn, behance, instagram } from "@/lib/staticContent";
 
 export default function Footer() {
   return (

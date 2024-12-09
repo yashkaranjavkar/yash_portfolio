@@ -1,9 +1,12 @@
+import { Esteban } from "next/font/google";
 import { Separator } from "@/components/ui/separator";
 import { Experiences } from "@/lib//staticContent";
 
+const esteban = Esteban({ subsets: ["latin"], weight: "400" });
+
 export default function ProfessionalExperience() {
   return (
-    <div style={{ fontFamily: "Esteban, serif" }} className="py-8">
+    <div className={`${esteban.className} mt-8 py-8`}>
       <h2 className="text-4xl font-normal mb-4 pb-2">
         professional experience
       </h2>

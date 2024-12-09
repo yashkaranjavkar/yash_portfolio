@@ -1,44 +1,24 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { email } from "@/lib/staticContent";
+import { Esteban } from "next/font/google";
+import { email, freelance } from "@/lib/staticContent";
+
+const esteban = Esteban({ subsets: ["latin"], weight: "400" });
 
 export default function FreelanceGallery() {
-  const projects = [
-    {
-      title: "Mandeshi Agro",
-      image: "/freelance1.png",
-      description: "Social Media Posters",
-      link: "https://www.behance.net/gallery/150123194/Mandeshi-Agro",
-    },
-    {
-      title: "Monic Elctricals",
-      image: "/freelance2.png",
-      description: "Out-reach collaterals",
-      link: "https://www.behance.net/gallery/163098497/Monic-Electricals",
-    },
-    {
-      title: "Volleyball World",
-      image: "/freelance3.png",
-      description: "ATL collaterals",
-      link: "https://www.behance.net/gallery/171881065/Volleyball-World-marketing-assets",
-    },
-  ];
-
   return (
-    <div
-      style={{ fontFamily: "Esteban, serif" }}
-      className=" font-normal mt-8 py-5"
-    >
-      {/* Main Section */}
+    <div className={`${esteban.className} font-normal mt-8 py-8`}>
       <div className="px-6 sm:px-12 lg:px-24 py-16">
-        <div className="text-center">
-          <h2 className="text-4xl">freelance design gallery</h2>
-        </div>
+        <h2 className="text-6xl font-medium text-center mb-5">
+          freelance design gallery
+        </h2>
 
-        {/* Gallery Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-          {projects.map((project, index) => (
+        <div
+          style={{ fontFamily: "Karla, sans-serif" }}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"
+        >
+          {freelance.map((project, index) => (
             <div key={index} className="group relative">
               <div
                 onClick={() => window.open(project.link, "_blank")}
@@ -58,25 +38,27 @@ export default function FreelanceGallery() {
           ))}
         </div>
       </div>
-      <div
-        style={{ fontFamily: "Karla, sans-serif" }}
-        className="mt-3 font-medium text-xl text-center underline"
-      >
-        see more
-      </div>
-      <div
-        style={{ fontFamily: "Esteban, serif" }}
-        className="flex flex-col items-end text-end mb-6"
-      >
-        <h2 className="text-4xl font-medium">what’s on your mind?</h2>
-        <p className="text-4xl font-medium">share with me</p>
-        <Link
+      <div className="flex flex-col items-center justify-center mt-3">
+        {/* See More Link */}
+        <div
           style={{ fontFamily: "Karla, sans-serif" }}
-          href={`mailto:${email}`}
-          className="text-purple-600 text-xl mt-2 inline-block"
+          className="font-medium text-xl text-center underline mb-16"
         >
-          {">>> " + email}
-        </Link>
+          see more
+        </div>
+
+        {/* Contact Section */}
+        <div className={`${esteban.className} block ml-[250px] text-start`}>
+          <h2 className="text-4xl font-medium">what’s on your mind?</h2>
+          <p className="text-4xl font-medium">share with me</p>
+          <Link
+            style={{ fontFamily: "Karla, sans-serif" }}
+            href={`mailto:${email}`}
+            className="text-purple-600 text-xl mt-2 inline-block"
+          >
+            {">>> " + email}
+          </Link>
+        </div>
       </div>
     </div>
   );

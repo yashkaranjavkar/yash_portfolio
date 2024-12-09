@@ -20,7 +20,7 @@ export default function Project() {
   };
 
   return (
-    <div style={{ fontFamily: "Karla, sans-serif" }} className="py-8">
+    <div style={{ fontFamily: "Karla, sans-serif" }} className="mt-8 py-8">
       <Cursor
         attachToParent
         variants={{
@@ -75,9 +75,7 @@ export default function Project() {
               <h4 className="font-bold text-[#671CAD] text-3xl">
                 {project.title}
               </h4>
-              <div className="text-[16px] space-y-1">
-                {project.details}
-              </div>
+              <div className="text-[16px] space-y-1">{project.details}</div>
             </div>
             <Separator className="my-1 bg-black h-[1px]" />
           </div>

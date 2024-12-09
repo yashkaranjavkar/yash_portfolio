@@ -1,9 +1,6 @@
-import { Esteban, Karla } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const esteban = Esteban({ subsets: ["latin"], weight: "400" });
-const karla = Karla({ subsets: ["latin"], weight: ["400", "700"] });
 
 import "./globals.css";
 
@@ -13,6 +10,9 @@ export const metadata = {
     "Professional portfolio of Yash Karanjavkar showcasing Unique Designs, Art and Engineering",
   keywords:
     "Yash, Yash Karanjavkar, portfolio, Designer, Interactive Designer, IIT Bombay, M. Des",
+  icons: {
+    icon: "/favicon.png",
+  },
   authors: [{ name: "Yash Karanjavkr" }],
   openGraph: {
     title: "Yash Karanjavkar",
@@ -20,13 +20,6 @@ export const metadata = {
       "Professional portfolio of Yash Karanjavkar showcasing Unique Designs, Art and Engineering",
     url: "https://yashgk.com",
     siteName: "Yash Karanjavkar",
-    // images: [
-    //   {
-    //     url: "https://your-domain.com/og-image.png",
-    //     width: 1200,
-    //     height: 630,
-    //   },
-    // ],
     locale: "en_US",
     type: "website",
   },
@@ -35,7 +28,6 @@ export const metadata = {
     title: "Yash Karanjavkar",
     description:
       "Professional portfolio of Yash Karanjavkar showcasing Unique Designs, Art and Engineering",
-    // images: ["https://your-domain.com/twitter-image.png"],
   },
   robots: {
     index: true,
@@ -83,7 +75,5 @@ export default function RootLayout({ children }) {
   );
 }
 
-
 // maintain same spacing between components
-// Fix esteban
 // Level photo in about

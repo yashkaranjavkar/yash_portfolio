@@ -13,7 +13,7 @@ export default function About() {
         </TextLoop>
       </h1>
 
-      <div className="flex items-start gap-6">
+      <div className="flex lowercase items-start gap-6">
         <div className="font-thin text-lg text-[#434343]" style={{ flex: 2 }}>
           <div className="mt-5">
             Student of Masters in Interaction Design at IDC School of Design,

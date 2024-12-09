@@ -5,7 +5,7 @@ import { TABS } from "@/lib/staticContent";
 import Link from "next/link";
 
 export default function Header() {
-  const [activeTab, setActiveTab] = useState(TABS[0]);
+  const [activeTab, setActiveTab] = useState(TABS[0].page);
 
   return (
     <div className="flex items-center justify-between">
