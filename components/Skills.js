@@ -7,8 +7,9 @@ const esteban = Esteban({ subsets: ["latin"], weight: "400" });
 export default function Skills() {
   return (
     <div className={`${esteban.className} mt-8 py-8`}>
-      <h2 className="text-4xl font-normal mb-4 pb-2">skills</h2>
-      <Separator className="my-2 bg-black" />
+      <h2 className="text-4xl font-normal pb-6 border-b-[1px] border-black ">
+        skills
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-5">
         {skills.map((skill, index) => (
           <div

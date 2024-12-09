@@ -4,7 +4,6 @@ import ProfessionalExperience from "@/components/ProfessionalExperience";
 import Skills from "@/components/Skills";
 import ExperienceWith from "@/components/ExperienceWith";
 import FreelanceGallery from "@/components/FreelanceGallery";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (

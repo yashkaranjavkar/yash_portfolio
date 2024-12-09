@@ -70,14 +70,13 @@ export default function Project() {
           <div key={project.key}>
             <div
               onClick={() => window.open(project.link, "_blank")}
-              className="grid grid-cols-2 items-center gap-x-4 py-6"
+              className="grid grid-cols-2 items-center gap-x-4 border-b-[1px] border-black py-6"
             >
               <h4 className="font-bold text-[#671CAD] text-3xl">
                 {project.title}
               </h4>
               <div className="text-[16px] space-y-1">{project.details}</div>
             </div>
-            <Separator className="my-1 bg-black h-[1px]" />
           </div>
         ))}
       </div>

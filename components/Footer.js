@@ -5,7 +5,9 @@ export default function Footer() {
   return (
     <div className="py-8">
       <div className="border-t border-black py-6 flex justify-between items-center">
-        <Link href={"/"} className="text-3xl text-purple-600">yk.</Link>
+        <Link href={"/"} className="text-4xl font-normal text-[#671CAD]">
+          yk.
+        </Link>
         <span
           style={{ fontFamily: "Karla, sans-serif" }}
           className="text-base text-black"
