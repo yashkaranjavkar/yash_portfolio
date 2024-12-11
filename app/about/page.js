@@ -3,7 +3,7 @@ import { TextLoop } from "@/components/motion-ui/TextLoop";
 
 export default function About() {
   return (
-    <div style={{ fontFamily: "Karla, sans-serif" }} className="text-black">
+    <div style={{ fontFamily: "Karla, sans-serif" }} className="text-black px-6 md:px-64">
       <h1 className="font-medium text-4xl">
         <TextLoop>
           <span>नमस्कार! 🙏</span>
