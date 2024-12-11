@@ -59,15 +59,15 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={`bg-white px-6 md:px-64 antialiased`}>
+      <body className={`bg-white antialiased`}>
         <header
           style={{ fontFamily: '"MS Reference Sans Serif", sans-serif' }}
-          className="bg-white sticky top-0 z-50 py-10"
+          className="bg-white sticky px-6 md:px-64 top-0 z-50 py-10"
         >
           <Header />
         </header>
         <main>{children}</main>
-        <footer>
+        <footer className="px-6 md:px-64">
           <Footer />
         </footer>
       </body>

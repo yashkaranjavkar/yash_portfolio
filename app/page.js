@@ -8,7 +8,7 @@ import FreelanceGallery from "@/components/FreelanceGallery";
 export default function Home() {
   return (
     <>
-      <div>
+      <div className="px-6 md:px-64">
         {/* Hero Section: Center */}
         <Hero />
 
@@ -20,10 +20,12 @@ export default function Home() {
 
         {/* Skills */}
         <Skills />
+      </div>
 
-        {/* ExperienceWith */}
-        <ExperienceWith />
-
+      {/* ExperienceWith */}
+      <ExperienceWith />
+      
+      <div className="px-6 md:px-64">
         {/* FreelanceGallery */}
         <FreelanceGallery />
       </div>

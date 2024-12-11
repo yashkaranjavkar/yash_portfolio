@@ -10,7 +10,7 @@ export default function FreelanceGallery() {
   return (
     <div className={`${esteban.className} font-normal mt-8 py-8`}>
       <div className="px-6 sm:px-12 lg:px-24 py-16">
-        <h2 className="text-6xl font-medium text-center mb-5">
+        <h2 className="text-5xl font-medium text-center mb-5">
           freelance design gallery
         </h2>
 
