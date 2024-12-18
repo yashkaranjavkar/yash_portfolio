@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import { Esteban } from "next/font/google";
 import { email, freelance } from "@/lib/staticContent";
+import ProjectCard from "./ProjectCard";
 
 const esteban = Esteban({ subsets: ["latin"], weight: "400" });
 
@@ -18,27 +18,7 @@ export default function FreelanceGallery() {
           style={{ fontFamily: "Karla, sans-serif" }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"
         >
-          {freelance.map((project, index) => (
-            <div key={index} className="group relative">
-              <div
-                onClick={() => window.open(project.link, "_blank")}
-                className="relative z-10 cursor-pointer overflow-hidden transition-all duration-200 group-hover:-translate-x-1 group-hover:-translate-y-1"
-              >
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <h3 className="mt-4 text-xl ml-2 font-semibold">
-                {project.title}
-              </h3>
-              <p className="text-gray-500 ml-2">{project.description}</p>
-              <div class="absolute inset-0 z-0 h-full w-full transition-all duration-200 group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:[box-shadow:5px_5px_#A67CCE]"></div>
-            </div>
-          ))}
+          {ProjectCard(freelance)}
         </div>
       </div>
       <div className="flex flex-col items-center justify-center mt-3">
