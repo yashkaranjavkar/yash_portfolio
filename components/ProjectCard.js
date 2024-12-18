@@ -15,7 +15,7 @@ const ProjectCard = (list) => {
                 alt={item.title}
                 width={500}
                 height={500}
-                className="w-full h-full object-cover transition-transform duration-200 p-1 hover:p-0"
+                className="w-full h-full object-cover transition-transform duration-200 p-2 hover:p-0"
               />
             </div>
             <div className="px-4 py-4">
