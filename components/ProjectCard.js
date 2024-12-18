@@ -4,7 +4,10 @@ const ProjectCard = (list) => {
   return (
     <>
       {list.map((item, index) => (
-        <div key={index} className="group relative bg-[#F9F2FF]">
+        <div
+          key={index}
+          className="group relative bg-[#F9F2FF] border-r-2 border-b-2 border-[#E4C8Ff]"
+        >
           <div className="relative z-10 transition-all duration-20 group-hover:-translate-x-1 group-hover:-translate-y-1">
             <div onClick={() => window.open(item.link, "_blank")} className="">
               <Image
@@ -12,7 +15,7 @@ const ProjectCard = (list) => {
                 alt={item.title}
                 width={500}
                 height={500}
-                className="w-full h-full object-cover transition-transform duration-200"
+                className="w-full h-full object-cover transition-transform duration-200 p-1 hover:p-0"
               />
             </div>
             <div className="px-4 py-4">

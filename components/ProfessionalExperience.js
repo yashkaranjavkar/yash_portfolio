@@ -1,5 +1,4 @@
 import { Esteban } from "next/font/google";
-import { Separator } from "@/components/ui/separator";
 import { Experiences } from "@/lib//staticContent";
 
 const esteban = Esteban({ subsets: ["latin"], weight: "400" });
