@@ -6,6 +6,8 @@ import ProjectCard from "./ProjectCard";
 const esteban = Esteban({ subsets: ["latin"], weight: "400" });
 
 export default function Project() {
+  const projects = Projects.slice(0, 3);
+
   return (
     <div className="mt-8 py-8">
       <h2 className={`${esteban.className} text-4xl font-normal pb-6`}>
@@ -15,7 +17,7 @@ export default function Project() {
         style={{ fontFamily: "Karla, sans-serif" }}
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-4"
       >
-        {ProjectCard(Projects)}
+        {ProjectCard(projects)}
       </div>
       <div
         onClick={() => window.open(behance, "_blank")}

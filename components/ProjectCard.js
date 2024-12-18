@@ -27,7 +27,7 @@ const ProjectCard = (list) => {
               </div>
             </div>
           </div>
-          <div class="absolute inset-0 z-0 h-full w-full transition-all duration-200 group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:[box-shadow:5px_5px_#A67CCE]"></div>
+          <div className="absolute inset-0 z-0 h-full w-full transition-all duration-200 group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:[box-shadow:5px_5px_#A67CCE]"></div>
         </div>
       ))}
     </>
