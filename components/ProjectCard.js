@@ -4,12 +4,9 @@ const ProjectCard = (list) => {
   return (
     <>
       {list.map((item, index) => (
-        <div key={index} className="group relative">
+        <div key={index} className="group relative bg-[#F9F2FF]">
           <div className="relative z-10 transition-all duration-20 group-hover:-translate-x-1 group-hover:-translate-y-1">
-            <div
-              onClick={() => window.open(item.link, "_blank")}
-              className=" bg-[#F9F2FF]"
-            >
+            <div onClick={() => window.open(item.link, "_blank")} className="">
               <Image
                 src={item.image}
                 alt={item.title}
