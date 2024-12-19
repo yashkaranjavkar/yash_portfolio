@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard";
 const esteban = Esteban({ subsets: ["latin"], weight: "400" });
 
 export default function Project() {
-  const projects = Projects.slice(0, 3);
+  const projects = Projects.slice(0, 6);
 
   return (
     <div className="mt-8 py-8">
