@@ -12,7 +12,7 @@ export default function Hero() {
         hey there , i am{" "}
         <span className=" text-[#671CAD]">yash karanjavkar.💫</span>
       </div>
-      <div className="w-[950px]">{ABOUT_MESSAGE_1}</div>
+      <div className="lg:w-[950px]">{ABOUT_MESSAGE_1}</div>
       <div className="">{ABOUT_MESSAGE_2}</div>
     </div>
   );

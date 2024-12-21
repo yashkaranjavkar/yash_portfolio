@@ -31,7 +31,7 @@ export default function FreelanceGallery() {
         </div>
 
         {/* Contact Section */}
-        <div className={`${esteban.className} block ml-[270px] text-start`}>
+        <div className={`${esteban.className} lg:block lg:ml-[270px] text-start`}>
           <h2 className="text-4xl font-medium">what’s on your mind?</h2>
           <p className="text-4xl font-medium">share with me</p>
           <Link

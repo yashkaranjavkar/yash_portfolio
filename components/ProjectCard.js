@@ -6,9 +6,10 @@ const ProjectCard = (list) => {
       {list.map((item, index) => (
         <div
           key={index}
-          className="group relative bg-[#F9F2FF] border-r-2 border-b-2 border-[#E4C8Ff] hover:border-r-0"
+          className="group relative bg-[#F9F2FF] border-r-2 border-b-2 border-[#E4C8FF] hover:border-r-0 hover:border-b-0 transition-all duration-300"
         >
-          <div className="relative z-10 items-center justify-center overflow-hidden transition-all duration-300 group-hover:-translate-x-3 group-hover:-translate-y-2 p-2 hover:p-0 hover:pl-3">
+          {/* Inner content container */}
+          <div className="relative z-10 items-center justify-center overflow-hidden transition-transform duration-300 group-hover:-translate-x-3 group-hover:-translate-y-2 p-2">
             <div onClick={() => window.open(item.link, "_blank")} className="">
               <Image
                 src={item.image}
@@ -27,7 +28,9 @@ const ProjectCard = (list) => {
               </div>
             </div>
           </div>
-          <div class="absolute inset-0 z-0 h-full w-full transition-all duration-300 group-hover:-translate-x-3 group-hover:-translate-y-2 group-hover:[box-shadow:10px_10px_#a67cce]"></div>
+
+          {/* Hover shadow effect */}
+          <div className="absolute inset-0 z-0 h-full w-full bg-transparent transition-all duration-300 group-hover:translate-x-1 group-hover:translate-y-1 group-hover:shadow-[10px_10px_#a67cce]"></div>
         </div>
       ))}
     </>
