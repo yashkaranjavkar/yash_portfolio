@@ -30,7 +30,7 @@ export default function ProjectPage() {
         {uniqueTags.map((tag) => (
           <button
             key={tag}
-            className={`relative group font-normal border-r-2 border-b-2 border-[#E4C8FF] hover:border-r-0 hover:border-b-0 transition-all duration-300 px-4 py-2 text-base ${
+            className={`relative group font-normal border-r-2 border-b-2 border-[#E4C8FF] transition-all duration-300 px-4 py-2 text-base ${
               activeFilter === tag
                 ? "bg-[#A67CCE] text-white"
                 : "bg-[#F9F2FF] text-[#434343]"
@@ -38,8 +38,6 @@ export default function ProjectPage() {
             onClick={() => setActiveFilter(tag)}
           >
             <span>{tag}</span>
-
-            {/* Hover shadow effect */}
             <div className="absolute inset-0 z-0 h-full w-full bg-transparent transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:shadow-[4px_4px_#a67cce]"></div>
           </button>
         ))}
