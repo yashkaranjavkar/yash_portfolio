@@ -35,7 +35,7 @@ export default function Footer() {
           </Link>
         </div>
         <div>
-          share me memes on &gt;
+          send me memes on &gt;
           <a
             href={instagram}
             className="ml-1 underline"
