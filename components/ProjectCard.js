@@ -6,7 +6,7 @@ const ProjectCard = (list) => {
       {list.map((item, index) => (
         <div
           key={index}
-          className="group relative bg-[#F9F2FF] cursor-pointer border-r-2 border-b-2 border-[#E4C8FF] hover:border-r-0 hover:border-b-0 transition-all duration-300"
+          className="group relative bg-[#F9F2FF] cursor-pointer border-r-2 border-b-2 border-[#E4C8FF] transition-all duration-300"
         >
           {/* Inner content container */}
           <div className="relative z-10 items-center justify-center overflow-hidden transition-transform duration-300 p-2">
