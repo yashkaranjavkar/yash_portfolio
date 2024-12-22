@@ -33,10 +33,10 @@ export default function ProjectPage() {
         {uniqueTags.map((tag) => (
           <button
             key={tag}
-            className={`relative group bg-[#F9F2FF] border-r-2 border-b-2 border-[#E4C8FF] hover:border-r-0 hover:border-b-0 transition-all duration-300 px-4 py-2 text-base ${
+            className={`relative group font-normal border-r-2 border-b-2 border-[#E4C8FF] hover:border-r-0 hover:border-b-0 transition-all duration-300 px-4 py-2 text-base ${
               activeFilter === tag
-                ? "bg-[#671CAD] text-white"
-                : "text-[#671CAD]"
+                ? "bg-[#A67CCE] text-white"
+                : "bg-[#F9F2FF] text-[#434343]"
             }`}
             onClick={() => setActiveFilter(tag)}
           >
