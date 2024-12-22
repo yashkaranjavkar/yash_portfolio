@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Esteban } from "next/font/google";
-import { email, freelance } from "@/lib/staticContent";
+import { email, freelance, behance } from "@/lib/staticContent";
 import ProjectCard from "./ProjectCard";
 
 const esteban = Esteban({ subsets: ["latin"], weight: "400" });
@@ -25,7 +25,8 @@ export default function FreelanceGallery() {
         {/* See More Link */}
         <div
           style={{ fontFamily: "Karla, sans-serif" }}
-          className="font-medium text-xl text-center underline mb-16"
+          onClick={() => window.open(behance, "_blank")}
+          className="font-medium cursor-pointer text-xl text-center underline mb-16"
         >
           see more
         </div>

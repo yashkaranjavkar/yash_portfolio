@@ -9,9 +9,13 @@ export default function Header() {
 
   return (
     <div className="flex items-center justify-between">
-      <div className="text-4xl font-normal text-[#671CAD]">
+      <Link
+        href={"/"}
+        onClick={() => setActiveTab(TABS[0].page)}
+        className="text-4xl font-normal text-[#671CAD]"
+      >
         yk.
-      </div>
+      </Link>
       <div className="flex flex-row space-x-4 sm:space-x-6">
         {TABS.map((tab, index) => (
           <Link key={index} href={tab.href} className={``}>

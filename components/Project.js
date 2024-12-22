@@ -21,7 +21,7 @@ export default function Project() {
       </div>
       <div
         onClick={() => window.open(behance, "_blank")}
-        className="mt-12 text-center underline"
+        className="mt-12 cursor-pointer text-center underline"
       >
         see more
       </div>
