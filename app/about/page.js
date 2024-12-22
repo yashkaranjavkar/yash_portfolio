@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div
       style={{ fontFamily: "Karla, sans-serif" }}
-      className="text-black px-6 md:px-16 lg:px-64"
+      className="text-black px-6 lg:px-64"
     >
       <div className="flex flex-col md:flex-row items-start gap-6">
         {/* Image */}

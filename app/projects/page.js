@@ -21,12 +21,9 @@ export default function ProjectPage() {
       : Projects.filter((project) => project.tags.includes(activeFilter));
 
   return (
-    <div
-      style={{ fontFamily: "Karla, sans-serif" }}
-      className="px-6 md:px-16 lg:px-64"
-    >
+    <div style={{ fontFamily: "Karla, sans-serif" }} className="px-6 lg:px-64">
       <h2 className={`${esteban.className} text-4xl font-normal pb-6`}>
-        professional experience
+        explore my projects
       </h2>
       <div className=" font-medium text-lg mb-6">sort by area</div>
       <div className="filters flex flex-wrap gap-2 mb-4 lg:mb-12">

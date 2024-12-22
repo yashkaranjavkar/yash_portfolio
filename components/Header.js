@@ -9,9 +9,9 @@ export default function Header() {
 
   return (
     <div className="flex items-center justify-between">
-      <Link href="/" className="text-4xl font-normal text-[#671CAD]">
+      <div className="text-4xl font-normal text-[#671CAD]">
         yk.
-      </Link>
+      </div>
       <div className="flex flex-row space-x-4 sm:space-x-6">
         {TABS.map((tab, index) => (
           <Link key={index} href={tab.href} className={``}>

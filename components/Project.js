@@ -10,8 +10,8 @@ export default function Project() {
 
   return (
     <div className="mt-8 py-8">
-      <h2 className={`${esteban.className} text-4xl font-normal pb-6`}>
-        explore my projects
+      <h2 className={`${esteban.className} text-3xl font-normal pb-6`}>
+        explore my key projects
       </h2>
       <div
         style={{ fontFamily: "Karla, sans-serif" }}

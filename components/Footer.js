@@ -15,7 +15,7 @@ export default function Footer() {
           yash karanjavkar © 2024
         </span>
       </div>
-      <div className="flex justify-between items-center mt-12 text-base text-black">
+      <div className="lg:flex justify-between items-center mt-12 text-base text-black">
         <div style={{ fontFamily: "Karla, sans-serif" }}>
           <Link
             href={linkedIn}

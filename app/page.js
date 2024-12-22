@@ -17,7 +17,6 @@ const Loader = () => (
       playsInline
       className=""
       onLoadedData={(e) => {
-        // Optionally, you can detect when the video is ready
         console.log("Video Loaded", e);
       }}
     >
@@ -42,7 +41,7 @@ export default function Home() {
       {isLoading && <Loader />}
       {!isLoading && (
         <>
-          <div className="px-6 md:px-64">
+          <div className="px-6 lg:px-64">
             {/* Hero Section: Center */}
             <Hero />
 
@@ -59,13 +58,10 @@ export default function Home() {
           {/* ExperienceWith */}
           <ExperienceWith />
 
-          <div className="px-6 md:px-64">
+          <div className="px-6 lg:px-64">
             {/* FreelanceGallery */}
             <FreelanceGallery />
           </div>
-          {/* <p style={{ fontFamily: "Karla, sans-serif" }}>This text uses Karla.</p>
-      <h1 style={{ fontFamily: "Esteban, serif" }}>This text uses Esteban.</h1>
-      <div>This text uses MS Reference Sans Serif.</div> */}
         </>
       )}
     </div>
