@@ -38,7 +38,9 @@ export default function ProjectPage() {
             onClick={() => setActiveFilter(tag)}
           >
             <span>{tag}</span>
-            <div className="absolute inset-0 z-0 h-full w-full bg-transparent transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:shadow-[4px_4px_#a67cce]"></div>
+            {activeFilter !== tag && (
+              <div className="absolute inset-0 z-0 h-full w-full bg-transparent transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:shadow-[4px_4px_#a67cce]"></div>
+            )}
           </button>
         ))}
       </div>
