@@ -30,7 +30,7 @@ export default function About() {
             </TextLoop>
           </h1>
 
-          <div className="font-thin text-sm md:text-base text-[#434343]">
+          <div className="font-regular text-sm md:text-base text-[#434343]">
             <div className="mt-5">
               Student of Masters in Interaction Design at IDC School of Design,
               IIT Bombay. It has been a roller coaster ride to shift my
