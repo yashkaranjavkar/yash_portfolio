@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { TextLoop } from "@/components/motion-ui/TextLoop";
 
@@ -9,14 +10,36 @@ export default function About() {
     >
       <div className="flex flex-col md:flex-row items-start gap-6">
         {/* Image */}
-        <div style={{ flex: 1 }} className="w-full md:w-1/2">
+        <div
+          style={{ flex: 1 }}
+          className="w-full md:w-1/2 flex flex-col items-center"
+        >
           <Image
             src="/yash.png"
             alt="Profile"
             width={300}
             height={300}
-            className="w-full h-auto object-cover rounded-lg"
+            className="w-full h-auto object-cover"
           />
+          {/* Center the button */}
+          <button
+            onClick={() => {
+              window.open("https://topmate.io/yash_karanjavkar/", "_blank");
+            }}
+            className={`relative group mt-8 h-16 font-normal border-r-2 border-b-2 border-2 border-purple-300 transition-all duration-300 px-4 text-base bg-[#F9F2FF] text-[#434343] flex items-center justify-center`}
+          >
+            <div className="flex justify-center items-center">
+              <Image
+                src="/topmate.png"
+                alt="Topmate"
+                width={25}
+                height={25}
+                className="w-auto h-auto mr-2 object-cover"
+              />
+              <span>Connect via Topmate</span>
+            </div>
+            <div className="absolute inset-0 z-0 h-full w-full bg-transparent transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:shadow-[4px_4px_#a67cce]"></div>
+          </button>
         </div>
 
         {/* Text Content */}
