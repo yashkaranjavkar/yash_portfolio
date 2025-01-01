@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -13,7 +14,7 @@ export const metadata = {
   icons: {
     icon: "/favicon.png",
   },
-  authors: [{ name: "Yash Karanjavkr" }],
+  authors: [{ name: "Yash Karanjavkar" }],
   openGraph: {
     title: "Yash Karanjavkar",
     description:
@@ -70,7 +71,10 @@ export default function RootLayout({ children }) {
         <footer className="px-6 lg:px-64">
           <Footer />
         </footer>
+        {/* Vercel Analytics */}
         <Analytics />
+        {/* Vercel Speed Insights */}
+        <SpeedInsights />
       </body>
     </html>
   );
