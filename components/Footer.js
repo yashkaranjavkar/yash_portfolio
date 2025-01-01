@@ -11,7 +11,7 @@ export default function Footer() {
         </Link>
         <span
           style={{ fontFamily: "Karla, sans-serif" }}
-          className="text-base text-black"
+          className="text-base text-black mt-4"
         >
           yash karanjavkar © 2025
           <br />
