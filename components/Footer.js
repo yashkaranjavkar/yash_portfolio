@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { linkedIn, behance, instagram } from "@/lib/staticContent";
 
@@ -12,7 +13,17 @@ export default function Footer() {
           style={{ fontFamily: "Karla, sans-serif" }}
           className="text-base text-black"
         >
-          yash karanjavkar © 2024
+          yash karanjavkar © 2025
+          <br />
+          make with ♥️ by{" "}
+          <span
+            className="underline cursor-pointer"
+            onClick={() => {
+              window.open("https://aakashsondagar.vercel.app/", "_blank");
+            }}
+          >
+            aakash sondagar
+          </span>
         </span>
       </div>
       <div className="lg:flex justify-between items-center mt-12 text-base text-black">
