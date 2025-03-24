@@ -66,7 +66,7 @@ export default function About() {
               From interface design to user studies, from AI in design to
               interactive installations, designing tangible user interfaces to
               human factors. Currently, I am interested in the playful field of
-              designing tabletop games. In 2024, I am designing 3 games, of
+              designing tabletop games. In 2024, I have designed 3 games in 2024, of
               which 2 won international awards.
             </div>
             <div className="mt-5">
