@@ -22,7 +22,7 @@ export default function About() {
             className="w-full h-auto object-cover"
           />
           {/* Center the button */}
-          <button
+          {/* <button
             onClick={() => {
               window.open("https://topmate.io/yash_karanjavkar/", "_blank");
             }}
@@ -39,7 +39,7 @@ export default function About() {
               <span>Connect via Topmate</span>
             </div>
             <div className="absolute inset-0 z-0 h-full w-full bg-transparent transition-all duration-300 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:shadow-[4px_4px_#a67cce]"></div>
-          </button>
+          </button> */}
         </div>
 
         {/* Text Content */}

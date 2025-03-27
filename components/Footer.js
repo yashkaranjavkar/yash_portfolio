@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { linkedIn, behance, instagram } from "@/lib/staticContent";
+import { email, linkedIn, behance, instagram } from "@/lib/staticContent";
 
 export default function Footer() {
   return (
@@ -28,6 +28,14 @@ export default function Footer() {
       </div>
       <div className="lg:flex justify-between items-center mt-12 text-base text-black">
         <div style={{ fontFamily: "Karla, sans-serif" }}>
+          <Link
+            href={email}
+            className="mr-4 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            email
+          </Link>
           <Link
             href={linkedIn}
             className="mr-4 underline"
