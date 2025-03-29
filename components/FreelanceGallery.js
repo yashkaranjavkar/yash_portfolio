@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Esteban } from "next/font/google";
-import { email, freelance, behance } from "@/lib/staticContent";
+import { email, emailID, freelance, behance } from "@/lib/staticContent";
 import ProjectCard from "./ProjectCard";
 
 const esteban = Esteban({ subsets: ["latin"], weight: "400" });
@@ -32,15 +32,17 @@ export default function FreelanceGallery() {
         </div>
 
         {/* Contact Section */}
-        <div className={`${esteban.className} lg:block lg:ml-[270px] text-start`}>
+        <div
+          className={`${esteban.className} lg:block lg:ml-[270px] text-start`}
+        >
           <h2 className="text-4xl font-medium">what’s on your mind?</h2>
           <p className="text-4xl font-medium">share with me</p>
           <Link
             style={{ fontFamily: "Karla, sans-serif" }}
-            href={`mailto:${email}`}
+            href={email}
             className="text-purple-600 text-xl mt-2 inline-block"
           >
-            {">>> " + email}
+            {">>> " + emailID}
           </Link>
         </div>
       </div>
